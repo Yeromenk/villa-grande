@@ -1,0 +1,196 @@
+/* src/Components/Services/Services.css */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 2rem;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 10px;
+    padding: 20px 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    background-color: var(--dark-color);
+    z-index: 1;
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-number {
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--light-color);
+    margin-right: 15px;
+    z-index: 2;
+}
+
+.service-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    border: 3px solid var(--accent-color);
+    z-index: 2;
+}
+
+.service-icon svg {
+    color: var(--primary-color);
+}
+
+.service-content {
+    color: white;
+    z-index: 2;
+    flex: 1;
+}
+
+.service-content h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+}
+
+.service-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .services-container {
+        padding: 0 1.5rem;
+    }
+
+    .service-item {
+        padding: 15px 12px;
+    }
+
+    .service-number {
+        font-size: 26px;
+        margin-right: 12px;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+
+    .service-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .service-content h3 {
+        font-size: 17px;
+    }
+
+    .service-content p {
+        font-size: 13px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .services-container {
+        padding: 0 1rem;
+        gap: 12px;
+    }
+
+    .service-item {
+        padding: 12px 10px;
+    }
+
+    .service-item::before {
+        width: 50%;
+        clip-path: polygon(40% 0, 100% 0, 100% 100%, 10% 100%);
+    }
+
+    .service-number {
+        font-size: 22px;
+        margin-right: 8px;
+        min-width: 25px;
+    }
+
+    .service-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        margin-right: 10px;
+        border-width: 2px;
+    }
+
+    .service-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .service-content h3 {
+        font-size: 15px;
+        line-height: 1.3;
+    }
+
+    .service-content p {
+        font-size: 12px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 380px) {
+    .service-item {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 10px;
+    }
+
+    .service-number {
+        order: 1;
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    .service-icon {
+        order: 2;
+        margin: 0 0 10px 0;
+    }
+
+    .service-content {
+        order: 3;
+        flex-basis: 100%;
+    }
+}
+
+/* Ensure touch targets are large enough */
+@media (hover: none) and (pointer: coarse) {
+    .service-item {
+        min-height: 70px;
+    }
+}

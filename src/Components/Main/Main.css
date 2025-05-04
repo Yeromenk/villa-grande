@@ -1,0 +1,100 @@
+/* src/Components/Main/Main.css */
+.main-section {
+    margin-bottom: 4rem;
+}
+
+.hero {
+    height: 70vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+}
+
+.intro {
+    padding: 4rem 2rem;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 3rem;
+}
+
+.intro-content {
+    flex: 1;
+}
+
+.intro-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.intro-stats {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-item {
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.stat-text {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .intro {
+        flex-direction: column;
+    }
+}
