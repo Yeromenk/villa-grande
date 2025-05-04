@@ -1,6 +1,6 @@
 import './App.css'
 import Header from './Layout/Header/Header.jsx'
-import Services from './components/Services/Services.jsx'
+import Services from './Components/Services/Services.jsx'
 import ServiceDetails from "./Components/ServiceDetails/ServiceDetails.jsx";
 import Main from "./Components/Main/Main.jsx";
 import Footer from "./Layout/Footer/Footer.jsx";
