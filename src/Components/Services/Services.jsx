@@ -1,4 +1,3 @@
-// src/Components/Services/Services.jsx
 import React from 'react';
 import './Services.css';
 import { Brush, Clipboard, DoorClosed, Droplet, Sofa } from 'lucide-react';
@@ -47,7 +46,7 @@ const Services = () => {
     ];
 
     return (
-        <div className="services-container">
+        <div className="services-container" id="services">
             {services.map((service) => (
                 <div
                     key={service.id}

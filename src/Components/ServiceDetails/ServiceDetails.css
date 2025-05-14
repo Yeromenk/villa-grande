@@ -1,4 +1,3 @@
-/* src/Components/ServiceDetails/ServiceDetails.css */
 .service-details {
     max-width: 1200px;
     margin: 0 auto;
@@ -11,6 +10,14 @@
     transform: translateY(20px);
     animation: fadeIn 0.8s forwards;
     scroll-margin-top: 100px;
+    background-color: #f8f8f8;
+    padding: 2rem;
+    position: relative;
+    border-left: 5px solid var(--secondary-color);
+}
+
+.detail-section:nth-child(even) .detail-content {
+    flex-direction: row-reverse;
 }
 
 .detail-section:target {
@@ -20,40 +27,57 @@
 .detail-section h2 {
     color: var(--primary-color);
     font-size: 2rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 2rem;
     padding-bottom: 0.8rem;
     position: relative;
+    display: inline-block;
 }
 
-.detail-section h2::before {
+.detail-section h2::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
-    width: 120px;
-    height: 2px;
-    background-color: var(--primary-color);
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
 }
 
 .detail-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    gap: 2.5rem;
     align-items: center;
 }
 
-.detail-content p {
-    color: var(--text-color);
-    line-height: 1.8;
+.detail-text {
+    flex: 1;
 }
 
-/* For sections with images */
+.detail-text p {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.detail-text p::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-color);
+}
+
 .detail-image {
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    flex: 1;
+    border: 3px solid var(--primary-color);
+    box-shadow: 10px 10px 0 var(--secondary-color);
     overflow: hidden;
     height: 300px;
+    position: relative;
 }
 
 .detail-image img {
@@ -80,19 +104,45 @@
 
 @keyframes highlight {
     0% {
-        background-color: rgba(212, 190, 156, 0.2);
+        background-color: rgba(255, 193, 7, 0.2);
     }
     100% {
-        background-color: transparent;
+        background-color: #f8f8f8;
+    }
+}
+
+@media (max-width: 992px) {
+    .detail-content {
+        flex-direction: column !important;
+    }
+
+    .detail-image {
+        width: 100%;
+        margin-top: 1.5rem;
     }
 }
 
 @media (max-width: 768px) {
-    .detail-content {
-        grid-template-columns: 1fr;
+    .detail-section {
+        padding: 1.5rem;
     }
 
     .detail-section h2 {
         font-size: 1.6rem;
+    }
+
+    .detail-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .detail-section {
+        padding: 1rem;
+    }
+
+    .detail-image {
+        height: 200px;
+        box-shadow: 5px 5px 0 var(--secondary-color);
     }
 }
