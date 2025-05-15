@@ -76,7 +76,6 @@
     border: 3px solid var(--primary-color);
     box-shadow: 10px 10px 0 var(--secondary-color);
     overflow: hidden;
-    height: 300px;
     position: relative;
 }
 
@@ -85,10 +84,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.5s;
-}
-
-.detail-image:hover img {
-    transform: scale(1.05);
 }
 
 @keyframes fadeIn {

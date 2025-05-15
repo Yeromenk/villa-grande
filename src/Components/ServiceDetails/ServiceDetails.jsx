@@ -12,7 +12,7 @@ const ServiceDetails = () => {
                         <p>Спрощений дизайн включає планування простору, підбір основних матеріалів та кольорових рішень. Такий підхід дозволяє заощадити час та кошти, але при цьому отримати професійний результат.</p>
                     </div>
                     <div className="detail-image">
-                        <img src="/src/assets/shabby-chic-interior-design-style.jpg" alt="Дизайн приміщення" />
+                        <img src="/src/assets/photo_2025-05-15_14-55-30.jpg" alt="Дизайн приміщення" />
                     </div>
                 </div>
             </section>
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
                         <p>Наша специфікація включає кількість, розміри та характеристики матеріалів, що допоможе уникнути помилок при закупівлі та монтажі, а також оптимізувати бюджет.</p>
                     </div>
                     <div className="detail-image">
-                        <img src="/src/assets/shabby-chic-interior-design-style.jpg" alt="Специфікація матеріалів" />
+                        <img src="/src/assets/photo_2025-05-15_14-55-35.jpg" alt="Специфікація матеріалів" />
                     </div>
                 </div>
             </section>
@@ -38,7 +38,7 @@ const ServiceDetails = () => {
                         <p>Ми пропонуємо міжкімнатні та вхідні двері різних стилів та цінових категорій, а також ламінат, паркет, вінілову підлогу та інші покриття високої якості.</p>
                     </div>
                     <div className="detail-image">
-                        <img src="/src/assets/shabby-chic-interior-design-style.jpg" alt="Двері та підлогові покриття" />
+                        <img src="/src/assets/photo_2025-05-15_14-55-32.jpg" alt="Двері та підлогові покриття" />
                     </div>
                 </div>
             </section>
