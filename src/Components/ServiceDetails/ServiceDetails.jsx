@@ -3,7 +3,6 @@ import './ServiceDetails.css';
 import roomDesign from '../../../public/assets/photo_2025-05-15_14-55-30.jpg';
 import specification from '../../../public/assets/photo_2025-05-15_14-55-35.jpg';
 import doors from '../../../public/assets/photo_2025-05-15_14-55-32.jpg';
-import tiles from '../../../public/assets/shabby-chic-interior-design-style.jpg';
 
 const ServiceDetails = () => {
   return (
@@ -80,7 +79,7 @@ const ServiceDetails = () => {
             </p>
           </div>
           <div className="detail-image">
-            <img src={tiles} alt="Плитка та сантехніка" />
+            <img src={roomDesign} alt="Плитка та сантехніка" />
           </div>
         </div>
       </section>
@@ -99,7 +98,7 @@ const ServiceDetails = () => {
             </p>
           </div>
           <div className="detail-image">
-            <img src={tiles} alt="Меблі на замовлення" />
+            <img src={roomDesign} alt="Меблі на замовлення" />
           </div>
         </div>
       </section>
