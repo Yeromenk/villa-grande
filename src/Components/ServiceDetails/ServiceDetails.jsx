@@ -1,8 +1,10 @@
 import React from 'react';
 import './ServiceDetails.css';
 import roomDesign from '../../../public/assets/photo_2025-05-15_14-55-30.jpg';
-import specification from '../../../public/assets/photo_2025-05-15_14-55-35.jpg';
-import doors from '../../../public/assets/photo_2025-05-15_14-55-32.jpg';
+import specification from '../../../public/assets/specification.jpg';
+import doors from '../../../public/assets/doors_floars.jpg';
+import furnishings from '../../../public/assets/5.jpg';
+import plumbing from '../../../public/assets/4.jpg';
 
 const ServiceDetails = () => {
   return (
@@ -79,7 +81,7 @@ const ServiceDetails = () => {
             </p>
           </div>
           <div className="detail-image">
-            <img src={roomDesign} alt="Плитка та сантехніка" />
+            <img src={plumbing} alt="Плитка та сантехніка" />
           </div>
         </div>
       </section>
@@ -98,7 +100,7 @@ const ServiceDetails = () => {
             </p>
           </div>
           <div className="detail-image">
-            <img src={roomDesign} alt="Меблі на замовлення" />
+            <img src={furnishings} alt="Меблі на замовлення" />
           </div>
         </div>
       </section>
