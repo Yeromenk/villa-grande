@@ -24,7 +24,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:info@villagrande.ua" className="contact-link">
+              <a href="mailto:villagrande.uz@gmail.com" className="contact-link">
                 <Mail size={18} strokeWidth={2} />
                 <span>villagrande.uz@gmail.com</span>
               </a>
@@ -45,7 +45,7 @@ const Footer = () => {
             <p>вулиця Івана Франка, 58, Ужгород, Закарпатська область, Україна</p>
           </div>
           <a
-            href="https://maps.google.com"
+            href="https://maps.app.goo.gl/H9QUx7d8FU5c3Qcc7"
             target="_blank"
             rel="noopener noreferrer"
             className="map-link"
@@ -58,7 +58,7 @@ const Footer = () => {
           <h4>Соціальні мережі</h4>
           <div className="social-icons">
             <a
-              href="https://www.instagram.com/villa_grande1/?igsh=YzJmZzJwaW1yZjIy#"
+              href="https://www.instagram.com/villa_grande1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -66,7 +66,7 @@ const Footer = () => {
               <Instagram size={22} strokeWidth={2} />
             </a>
             <a
-              href="https://www.facebook.com/villagrande1?locale=ru_RU"
+              href="https://www.facebook.com/villagrande1"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"

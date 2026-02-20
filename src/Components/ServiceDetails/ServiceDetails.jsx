@@ -1,10 +1,10 @@
 import React from 'react';
 import './ServiceDetails.css';
-import roomDesign from '../../../public/assets/photo_2025-05-15_14-55-30.jpg';
-import specification from '../../../public/assets/specification.jpg';
-import doors from '../../../public/assets/doors_floars.jpg';
-import furnishings from '../../../public/assets/5.jpg';
-import plumbing from '../../../public/assets/4.jpg';
+import roomDesign from '/assets/photo_2025-05-15_14-55-30.jpg';
+import specification from '/assets/specification.jpg';
+import doors from '/assets/doors_floars.jpg';
+import furnishings from '/assets/5.jpg';
+import plumbing from '/assets/4.jpg';
 
 const ServiceDetails = () => {
   return (
